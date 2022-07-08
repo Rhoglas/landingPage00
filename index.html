@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- File JavaScript externo -->
+  <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script defer src="scriptList.js"></script>
+  <script defer src="script.js"></script>
+
+  <!-- File style CSS externo -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style2.css" />
+
+  <!-- Title of page -->
+  <title>Meu E-comerce</title>
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header id="header">
+    <a id="logo" href="">
+      <span>Mercadinho</span>
+      <span>Cruz</span></a>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a href="#inicio">Sobre</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#promo">Promoções</a></li>
+        <li><a href="#contLocal">Localidade</a></li>
+        <li><a href="#rodape">Contato</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Apresentação Inicial -->
+  <div class="container " id='inicio'>
+    <aside class="contImg">
+      <img src="./img/banner0.jpg" alt="banner da pagina">
+    </aside>
+    <section class="contText">
+      <h2>Supermercado</h2>
+      <h1>Mercadinho<span> Cruz</span></h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corrupti numquam facilis eos fugit assumenda
+        alias, ratione, ex cupiditate rem optio delectus ullam placeat eum tenetur molestiae! Sunt, doloribus est.</p>
+      <a class='buttom' href="#contLocal">Saiba Mais!</a>
+    </section>
+  </div>
+
+  <!-- Grade de produtos -->
+  <div class="produtos " id='produtos'>
+    <section class="proText">
+      <h1>Venha conferir os nossos melhores preços</h1>
+      <h2>Catálogo de produtos</h2>
+    </section>
+    <section class="gradeProdu">
+      <!-- <section class="produt">
+          <div class="gradeImg">
+          </div>
+          <div class="namePro">
+            trigooooo
+          </div>
+          <div class='precoProd'>
+            R$: 9,99
+          </div>
+        </section>  -->
+    </section>
+  </div>
+
+  <!-- Carrosel de promoções -->
+  <div class="ofertas " id='promo'>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- <div class="swiper-slide">Slide 1</div>  -->
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div id='promocoes'>
+      <h1>Ofertas</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nihil deserunt consequuntur, dolorum minima
+        soluta id at laborum officia possimus, perspiciatis cum repellat non asperiores natus quo accusamus ducimus eos?
+      </p>
+      <a class='buttom' href="">Chamar no whatsapp</a>
+    </div>
+  </div>
+
+  <!-- Localização  -->
+  <div id="contLocal">
+    <div id="localFrame">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1993.5636396884072!2d-56.489422440516776!3d-2.1044840468182655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92633534afd47f61%3A0x269883976845e442!2sMercadinho%20JMN!5e0!3m2!1spt-BR!2sbr!4v1657163143112!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div id="localText">
+      <h2>Onde nos encontrar?</h2>
+      <h1>Localização</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae similique autem doloremque laboriosam hic
+        perspiciatis ex quaerat explicabo. Illo repudiandae modi reprehenderit rerum quisquam corporis eveniet ab ut
+        ipsa doloremque?</p>
+      <a class='buttom' href="https://goo.gl/maps/icL8GbpMgDwdJJEx8">Vamos lá</a>
+    </div>
+  </div>
+
+  <!-- Contato -->
+  <footer class="rodape " id='rodape'>
+    <section id="footer1">
+      <h1>Mercadinho Cruz</h1>
+      <hr>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugiat corrupti reprehenderit qui quia
+        consectetur tempora reiciendis optio, aspernatur veritatis vitae excepturi itaque odit quam voluptatem ea
+        voluptate quasi commodi?</p>
+    </section>
+    <div id="footer2">
+      <h1> Nossas redes sociais </h1>
+      <hr>
+      <p>
+        É só clicar !
+      </p>
+      <span>
+        <a class='icon' id='icon1' href="">Facebook</a>
+        <a class='icon' id='icon2' href=""> Whatsapp</a>
+        <a class='icon' id='icon3' href=""> Instagram</a>
+        <a class='icon' id='icon4' href=""> E-mail</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- carrosel de cartões -->
+  <div class="marquee marquee-card " data-speed="20">
+    <!--speed 1px/(x)ms" -->
+    <div class="marquee__row marquee__row--nezuko">
+      <!--    <img class="marquee__item card-item" src="./imgcart/bb.png" data-clone="1"> -->
+    </div>
+  </div>
+</body>
+
+</html>
